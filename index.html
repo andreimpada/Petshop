@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetShop - MundoPet</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/src/styles/index.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="./src/assets/logo.svg" alt="logo">
+            </div>
+        </header>
+        <main>
+            <section class="agenda-header">
+                <div>
+                    <h1>Sua agenda</h1>
+                    <span>Aqui você pode ver todos os clientes e serviços agendados para hoje.</span>
+                </div>
+                <div class="input-data">
+                    <i><img src="./src/assets/Calendar.svg" alt="calendario"></i>
+                    <input type="date" name="date" id="date" required>
+                    <i><img src="./src/assets/Icon.svg" alt=""></i>
+                </div>
+            </section>
+            <section class="period-section">
+                <header class="morning-header">
+                    <div>
+                        <i><img src="src/assets/Sun.svg" alt="Sun"></i>
+                        <span>Manhã</span>
+                    </div>
+                    <div>
+                        <span>09h-12h</span>
+                    </div>
+                </header>
+                <!-- EXEMPLOS DE AGENDAMENTOS -->
+                <div class="schedule">
+                    <div class="horarioName">
+                        <span>10:00</span>
+                        <span>Thor</span>
+                        <span>/ Fernanda Costa</span>
+                    </div>
+                    <div class="service">
+                        <span>Vacinação</span>
+                    </div>
+                    <div class="remove">
+                        <span>Remover agendamento</span>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+    </div>
+
+
+</body>
+
+</html>

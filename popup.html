@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetShop - MundoPet</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/src/styles/index.css">
+</head>
+
+<body>
+    <div class="popup-wrapper">
+        <div class="popup-content">
+            <header>
+                <h2>Agende um Atendimento</h1>
+                    <span>Preencha os campos abaixo para agendar um novo atendimento.</span>
+            </header>
+            <form id="schedulessubmit">
+                <label for="tutor">Nome do Tutor</label>
+                <div class="input-wrapper">
+                    <img src="./src/assets/User.png" alt="People Icon">
+                    <input type="text" id="tutor" placeholder="Helena Souza" required>
+                </div>
+
+                <label for="pet">Nome do Pet</label>
+                <div class="input-wrapper">
+                    <img src="./src/assets/Pet.svg" alt="Pet Icon">
+                    <input type="text" id="pet" placeholder="Cheddar" required>
+                </div>
+
+                <label for="telefone">Telefone</label>
+                <div class="input-wrapper">
+                    <img src="./src/assets/Phone.svg" alt="Phone Icon">
+                    <input type="tel" id="telefone" placeholder="(00) 00000-0000">
+                </div>
+                <label for="service">Descrição do serviço</label>
+                <div class="service-wrapper">
+                    <textarea name="serviços" id="service" required></textarea>
+                </div>
+
+                <div class="datahour">
+                    <div>
+                        <label for="data">Data</label>
+                        <img src="./src/assets/Calendar.svg" alt="Calendar Icon">
+                        <input type="date" id="scheduledate" required>
+                    </div>
+                    <div>
+                        <label for="hour">Hora</label>
+                        <img src="./src/assets/Clock.svg" alt="Clock Icon">
+                        <input type="time" id="schedulehour" required>
+                    </div>
+
+                    <button type="submit" id="scheduleSubmit">AGENDAR</button>
+
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>

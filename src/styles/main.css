@@ -174,10 +174,12 @@ footer {
     margin-right: 30px;
 
     button {
+        margin-bottom: 40px;
         width: 218px;
         height: 48px;
         background-color: var(--content-brand);
         border-radius: 8px;
+
         font: var(--label-lg);
         color: #050505;
         border: 1px solid var(--content-brand);
@@ -201,9 +203,12 @@ footer {
     width: 100vw;
     height: 100vh;
     z-index:999;
+    overflow-y: auto;
+    display: block;
 
     background-color: rgba(0,0,0,0.1);
     backdrop-filter: blur(6px);
+
 }
 
 
@@ -219,6 +224,7 @@ footer {
     width: 477px;
     padding: 40px;
     border-radius: 12px;
+    position: relative;
 }
 
 .popup-content {

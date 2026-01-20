@@ -137,8 +137,67 @@
         </main>
     </div>
     <footer>
-        <button><span>NOVO AGENDAMENTO</span></button>
+        <button class="btn" id="btnsubmit"><span>NOVO AGENDAMENTO</span></button>
     </footer>
+
+    <div class="overlay hide">
+        <div class="popup-wrapper">
+            <div class="popup-content">
+                <header>
+                    <h2>Agende um atendimento</h1>
+                        <span>Preencha os dados do cliente para realizar o agendamento:</span>
+                </header>
+                <form id="schedulessubmit">
+                    <label for="tutor">Nome do tutor</label>
+                    <div class="input-wrapper">
+                        <img src="./src/assets/User.png" alt="People Icon">
+                        <input class="input-control" type="text" id="tutor" placeholder="Helena Souza" required>
+                    </div>
+
+                    <label for="pet">Nome do pet</label>
+                    <div class="input-wrapper">
+                        <img src="./src/assets/Pet.svg" alt="Pet Icon">
+                        <input class="input-control" type="text" id="pet" placeholder="Cheddar" required>
+                    </div>
+
+                    <label for="telefone">Telefone</label>
+                    <div class="input-wrapper">
+                        <img src="./src/assets/Phone.svg" alt="Phone Icon">
+                        <input class="input-control" type="tel" id="telefone" placeholder="(00) 00000-0000">
+                    </div>
+                    <label for="service">Descrição do serviço</label>
+                    <div class="service-wrapper">
+                        <textarea class="input-control" name="serviços" id="service" placeholder="Banho e tosa"
+                            required></textarea>
+                    </div>
+
+                    <div class="datahour">
+                        <div>
+                            <label for="data">Data</label>
+                            <div class="hourdate-wrapper">
+                                <img src="./src/assets/Calendar.svg" alt="Calendar Icon">
+                                <input class="input-control" type="date" id="scheduledate" required>
+                                <img src="./src/assets/Icon.svg" alt="CheckIcon">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="hour">Hora</label>
+                            <div class="hourdate-wrapper">
+                                <img src="./src/assets/Clock.svg" alt="Clock Icon">
+                                <input class="input-control" type="time" id="schedulehour" required>
+                                <img src="./src/assets/Icon.svg" alt="CheckIcon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btnfooter">
+                        <button type="submit" id="scheduleSubmit">AGENDAR</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>

@@ -84,10 +84,23 @@
     }
 }
 
+/* Container header+clientes */
+
+.schedule-wrapper{
+    /* border:1px solid red; */
+    background-color: var(--background-tertiary);
+    margin-bottom: 12px;
+    border-radius: 8px;
+}
+
+.schedule-wrapper:last-child{
+    margin-bottom: 0px;
+}
+
+
 /* Header dos horarios */
 .scheduleheader {
     border-bottom: 1px solid #2E2C30;
-    background-color: var(--background-tertiary);
     display: flex;
     justify-content: space-between;
     font: var(--label-lg);
@@ -116,6 +129,8 @@
     gap: 16px;
     align-items: center;
     background-color: var(--background-tertiary);
+    border-bottom-left-radius:8px ;
+    border-bottom-right-radius: 8px;
 }
 
 .schedules-container+.schedules-container {

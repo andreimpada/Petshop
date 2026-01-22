@@ -139,6 +139,16 @@ eval("{\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleEle
 
 /***/ },
 
+/***/ "./src/javascript/newschedulebtn.js"
+/*!******************************************!*\
+  !*** ./src/javascript/newschedulebtn.js ***!
+  \******************************************/
+() {
+
+eval("{var submitClick = document.getElementById(\"btnsubmit\");\nvar overlay = document.getElementById(\"overlay\");\nsubmitClick.addEventListener(\"click\", function () {\n  try {\n    overlay.classList.toggle(\"hide\");\n  } catch (error) {\n    console.log(error);\n    alert(\"Não foi possivel fazer o agendamento, tente mais tarde\");\n  }\n});\n\n//# sourceURL=webpack:///./src/javascript/newschedulebtn.js?\n}");
+
+/***/ },
+
 /***/ "./src/libs/dayjs.js"
 /*!***************************!*\
   !*** ./src/libs/dayjs.js ***!
@@ -157,7 +167,7 @@ eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var day
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _libs_dayjs_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./libs/dayjs.js */ \"./src/libs/dayjs.js\");\n/* harmony import */ var _styles_global_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/global.css */ \"./src/styles/global.css\");\n/* harmony import */ var _styles_main_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./styles/main.css */ \"./src/styles/main.css\");\n/* harmony import */ var dayjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! dayjs */ \"./node_modules/dayjs/dayjs.min.js\");\n/* harmony import */ var dayjs__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(dayjs__WEBPACK_IMPORTED_MODULE_3__);\n\n\n//configuração do dayjs\n\n\n//CSS\n\n\n\nconsole.log(dayjs__WEBPACK_IMPORTED_MODULE_3___default()().format(\"DD/MM - HH:mm\"));\n\n//# sourceURL=webpack:///./src/main.js?\n}");
+eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _libs_dayjs_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./libs/dayjs.js */ \"./src/libs/dayjs.js\");\n/* harmony import */ var _styles_global_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/global.css */ \"./src/styles/global.css\");\n/* harmony import */ var _styles_main_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./styles/main.css */ \"./src/styles/main.css\");\n/* harmony import */ var _javascript_newschedulebtn_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./javascript/newschedulebtn.js */ \"./src/javascript/newschedulebtn.js\");\n/* harmony import */ var _javascript_newschedulebtn_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_javascript_newschedulebtn_js__WEBPACK_IMPORTED_MODULE_3__);\n\n\n//configuração do dayjs\n\n\n//CSS\n\n\n\n//JS\n\n\n\n//# sourceURL=webpack:///./src/main.js?\n}");
 
 /***/ },
 

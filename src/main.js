@@ -10,5 +10,14 @@ import "./styles/main.css"
 
 //JS
 
-import "./javascript/newschedulebtn.js"
+import "./javascript/popupconfigs.js"
 import "./javascript/data.js"
+import "./javascript/popup-form.js"
+import "./javascript/schedule-api.js"
+
+
+
+import { fetchschedules } from "./javascript/schedule-api.js" 
+window.onload= () => {
+    fetchschedules();
+}  

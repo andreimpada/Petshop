@@ -122,44 +122,35 @@
 /* Cards de agendamentos */
 
 .schedules-container {
-    height: 88px;
+    /* border: 1px solid red; */
+    min-height: 88px;
     padding: 12px 20px 12px 30px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 150px;
-    gap: 16px;
-    align-items: center;
+    /* gap: 16px; */
+    /* align-items: center; */
     background-color: var(--background-tertiary);
     border-bottom-left-radius:8px ;
     border-bottom-right-radius: 8px;
 }
 
-.schedules-container+.schedules-container {
-    position: relative;
-    ;
+.schedule{
+    height: 88px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 150px;
+    gap: 16px;
+    align-items: center;
 }
 
-.schedules-container+.schedules-container::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 20px;
-    right: 20px;
-    height: 1px;
-    background-color: #2E2C30;
-}
-
-.hour {
+.schedule span.hour{
     margin-right: 16px;
     font: var(--label-md);
     color: var(--content-primary);
 }
-
-.petName {
+.schedule span.petName {
     font: var(--label-sm);
     color: var(--content-primary);
 }
 
-.ownerName {
+.schedule span.ownerName {
     font: var(--paragraph-sm);
     color: var(--content-secondary);
 }
@@ -169,6 +160,26 @@
     font: var(--paragraph-sm);
     color: var(--content-secondary);
 }
+
+
+.schedule+.schedule {
+    position: relative;
+    ;
+}
+
+.schedule+.schedule::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 20px;
+    right: 20px;
+    height: 1px;
+    background-color: #2E2C30;
+}
+
+
+
+
 
 .remove {
     font: var(--paragraph-sm);

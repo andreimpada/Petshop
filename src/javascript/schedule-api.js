@@ -18,6 +18,7 @@ export function renderschedules(appointments) {
 
          //cria o contato 
          itemdiv.classList.add("schedule")
+         itemdiv.setAttribute("data-id",item.id);
          itemdiv.innerHTML = `
       <div>
       <span class="hour">${item.hour}</span>
@@ -60,6 +61,4 @@ export async function fetchschedules() {
       console.log("erro ao carregar agendamentos", error)
 
    }
-
 }
-

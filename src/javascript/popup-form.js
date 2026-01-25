@@ -9,6 +9,7 @@ const hourpick = document.getElementById("schedulehour")
 const overlay = document.getElementById("overlay")
 const hourpopup = document.getElementById("schedulehour")
 
+
 import { fetchschedules } from "./schedule-api.js" 
 
 
@@ -105,3 +106,6 @@ async function filtroHorariosOcupados() {
 
     return horasOcupadas;
 }
+
+
+

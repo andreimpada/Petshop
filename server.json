@@ -1,13 +1,3 @@
 {
-  "schedules": [
-    {
-      "id": 1769212244991,
-      "tutor": "aaaaaaaa",
-      "pet": "aaaaaaaaaaa",
-      "tel": "aaaaaaaaa",
-      "service": "aaaaaaaaaaaaa",
-      "date": "2026-01-24",
-      "hour": "09:00"
-    }
-  ]
+  "schedules": []
 }

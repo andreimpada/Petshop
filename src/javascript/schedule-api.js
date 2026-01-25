@@ -36,9 +36,9 @@ export function renderschedules(appointments) {
          //separação por hora 
          const hour = parseInt(item.hour.split(":")[0]);
 
-         if (hour < 12) {
+         if (hour <= 12) {
             containerMorning.appendChild(itemdiv)
-         } else if (hour >= 12 && hour < 18) {
+         } else if (hour >= 12 && hour <= 18) {
             containerAfternoon.appendChild(itemdiv)
          } else {
             containerNight.appendChild(itemdiv)

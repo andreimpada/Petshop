@@ -19,7 +19,7 @@ schedulesubmit.addEventListener("submit", async (event) => {
     //captura os dados do cliente
 
     const newappointment = {
-        id: new Date().getTime(),
+        id: String(new Date().getTime()),
         tutor: tutorname.value,
         pet: petname.value,
         tel: telefone.value,
@@ -67,6 +67,9 @@ inputDataPopup.addEventListener("change", () => {
 
 async function hoursfill(){
     const horasOcupadas = await filtroHorariosOcupados();
+    const agora = new Date();
+    const datahoje = agora.toISOString().split('T')[0];
+    const horaAtual = agora.getHours()
     
 
     hourpopup.innerHTML="";
@@ -78,8 +81,9 @@ async function hoursfill(){
             continue;        
         }
 
-
-
+        if(datapick.value === datahoje && h <=horaAtual){
+            continue;
+        }
 
 
         const horarioinput = document.createElement("option")

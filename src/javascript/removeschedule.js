@@ -22,16 +22,15 @@ schedulewrapper.addEventListener("click", async (event) => {
 
 async function scheduleremove(id) {
     try {
-        await fetch(`http://localhost:3333/schedules/${id}`, {
+       const response = await fetch(`http://localhost:3333/schedules/${id}`, {
             method: "DELETE"
         });
 
-        if(!Response.ok){
+        if(!response.ok){
             throw new Error("Erro ao deletar no servidor");
         }
 
         await fetchschedules();
-
         alert("Agendamento removido!");
 
 
